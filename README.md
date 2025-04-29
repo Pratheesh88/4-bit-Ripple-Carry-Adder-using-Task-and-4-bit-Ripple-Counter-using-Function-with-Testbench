@@ -6,7 +6,7 @@ To design and simulate a 4-bit Ripple Counter using Verilog HDL with a function 
 Apparatus Required:
 Computer with Vivado or any Verilog simulation software.
 Verilog HDL compiler.
-
+```
 // Verilog Code
 module ripple_carry_adder_4bit (
     input [3:0] A,      // 4-bit input A
@@ -40,10 +40,12 @@ module ripple_carry_adder_4bit (
     assign Sum = sum_temp;
 
 endmodule
-
+```
+## OUTPUT
+![Screenshot 2025-04-19 130755](https://github.com/user-attachments/assets/e763a338-a0b1-4bdb-8b65-5be8294219c2)
 
 // Test bench for Ripple carry adder
-
+```
 module ripple_carry_adder_4bit_tb;
 
     reg [3:0] A, B;
@@ -85,10 +87,13 @@ module ripple_carry_adder_4bit_tb;
     end
 
 endmodule
+```
+## OUTPUT
+![Screenshot 2025-04-26 093247](https://github.com/user-attachments/assets/32efd934-f73e-4bc5-b63c-6a8c77d97826)
 
 
 // Verilog Code ripple counter
-
+```
 module ripple_counter_4bit (
     input clk,           // Clock signal
     input reset,         // Reset signal
@@ -112,9 +117,12 @@ module ripple_counter_4bit (
     end
 
 endmodule
+```
+## OUTPUT
+![Screenshot 2025-04-19 122322](https://github.com/user-attachments/assets/be7995af-88fc-4536-a1b4-f966c5f6a533)
 
 // TestBench
-
+```
 module ripple_counter_4bit_tb;
 
     reg clk;
@@ -148,6 +156,9 @@ module ripple_counter_4bit_tb;
     end
 
 endmodule
+```
+## OUTPUT
+![Screenshot 2025-04-26 092826](https://github.com/user-attachments/assets/478a7e55-8915-4a02-b9ba-b3a029e4d416)
 
 Conclusion:
 The 4-bit Ripple Carry Adder was successfully designed and implemented using Verilog HDL with the help of a task for the full adder logic. The testbench verified that the ripple carry adder correctly computes the 4-bit sum and carry-out for various input combinations. The simulation results matched the expected outputs.
